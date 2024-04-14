@@ -1,0 +1,177 @@
+.epsilon-notifybox {
+	box-sizing: content-box;
+	position: fixed;
+	z-index: 999999;
+	width: 100%;
+	transition: 0.5s;
+}
+
+.epsilon-notifybox__inner {
+	position: relative;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+	border-radius: 5px;
+}
+
+.epsilon-notifybox__close {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	right: 10px;
+	top: -32px;
+	width: 46px;
+	height: 46px;
+	border-radius: 50%;
+	background: #FFFFFF;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+	cursor: pointer;
+}
+
+.epsilon-notifybox__success {
+	display: none;
+	text-align: center;
+}
+
+.epsilon-notifybox__success svg {
+	margin-bottom: 13px;
+	margin-top: 10px;
+}
+
+.epsilon-notifybox__success p {
+	margin-bottom: 18px;
+	font-size: 17px;
+	line-height: 20px;
+	color: #000000;
+	font-weight: bold;
+}
+
+.epsilon-notifybox__success span {
+	display: block;
+	margin-bottom: 10px;
+	font-size: 15px;
+	line-height: 18px;
+	color: #666666;
+}
+
+.epsilon-notifybox-closed {
+	position: fixed;
+	z-index: 999999;
+}
+
+.epsilon-notifybox-closed__icon {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+	cursor: pointer;
+}
+
+.epsilon-notifybox-hidden {
+	visibility: hidden;
+	opacity: 0;
+}
+
+.epsilon-notifybox-top-right {
+	top: 0;
+	right: 0;
+}
+
+.epsilon-notifybox-top-center {
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.epsilon-notifybox-top-left {
+	top: 0;
+	left: 0;
+}
+
+.epsilon-notifybox-middle-right {
+	top: 50%;
+	transform: translateY(-50%);
+	right: 0;
+}
+
+.epsilon-notifybox-middle-center {
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+}
+
+.epsilon-notifybox-middle-left {
+	top: 50%;
+	transform: translateY(-50%);
+	left: 0;
+}
+
+.epsilon-notifybox-bottom-right {
+	bottom: 0;
+	right: 0;
+}
+
+.epsilon-notifybox-bottom-center {
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.epsilon-notifybox-bottom-left {
+	bottom: 0;
+	left: 0;
+}
+
+/* Shortcodes */
+
+.epsilon-notifybox .enb-coupon-button {
+	display: block;
+	max-width: 280px;
+	width: 100%;
+	margin: 15px auto;
+	min-height: 50px;
+	border-radius: 3px;
+	font-size: 17px;
+	text-align: center;
+	text-transform: none;
+}
+
+.epsilon-notifybox .enb-close-link {
+	display: block;
+	text-align: center;
+	margin: 15px 0;
+	color: #0080E2;
+	font-size: 17px;
+	line-height: 20px;
+}
+
+.enb-countdown {
+	display: flex;
+	justify-content: center;
+	list-style: none;
+	margin: 15px 0;
+}
+
+.enb-countdown li {
+	flex-grow: 1;
+	flex-basis: 0;
+	max-width: 90px;
+	margin: 0 2.5px;
+	padding: 6px 5px 9px;
+	border-radius: 3px;
+	font-size: 16px;
+	line-height: 19px;
+	text-align: center;
+	color: rgba(255, 255, 255, 0.8);
+}
+
+.enb-countdown li b {
+	display: block;
+	margin-bottom: 2px;
+	font-size: 35px;
+	line-height: 42px;
+	color: #FFFFFF;
+	text-align: center;
+}
